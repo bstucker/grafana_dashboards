@@ -104,7 +104,7 @@
               "bucketAggs": [
                 {
                   "fake": true,
-                  "field": "program.raw",
+                  "field": "program.keyword",
                   "id": "3",
                   "settings": {
                     "order": "asc",
@@ -210,7 +210,7 @@
               "bucketAggs": [
                 {
                   "fake": true,
-                  "field": "logsource.raw",
+                  "field": "logsource.keyword",
                   "id": "3",
                   "settings": {
                     "order": "asc",
@@ -382,8 +382,8 @@
         {
           "columns": [
             {
-              "text": "program.raw",
-              "value": "program.raw"
+              "text": "program.keyword",
+              "value": "program.keyword"
             }
           ],
           "editable": true,
@@ -407,7 +407,7 @@
               "bucketAggs": [
                 {
                   "fake": true,
-                  "field": "program.raw",
+                  "field": "program.keyword",
                   "id": "3",
                   "settings": {
                     "order": "desc",
@@ -439,8 +439,8 @@
         {
           "columns": [
             {
-              "text": "logsource.raw",
-              "value": "logsource.raw"
+              "text": "logsource.keyword",
+              "value": "logsource.keyword"
             }
           ],
           "editable": true,
@@ -464,7 +464,7 @@
               "bucketAggs": [
                 {
                   "fake": true,
-                  "field": "logsource.raw",
+                  "field": "logsource.keyword",
                   "id": "3",
                   "settings": {
                     "order": "desc",
@@ -548,7 +548,7 @@
             "selected": true
           }
         ],
-        "query": "{\"find\": \"terms\", \"field\": \"logsource.raw\"}",
+        "query": "{\"find\": \"terms\", \"field\": \"logsource.keyword\"}",
         "refresh": 1,
         "type": "query"
       },
@@ -787,7 +787,7 @@
             "selected": false
           }
         ],
-        "query": "{\"find\": \"terms\", \"field\": \"program.raw\"}",
+        "query": "{\"find\": \"terms\", \"field\": \"program.keyword\"}",
         "refresh": 1,
         "type": "query"
       }

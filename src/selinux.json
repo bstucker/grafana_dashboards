@@ -194,7 +194,7 @@
               "bucketAggs": [
                 {
                   "fake": true,
-                  "field": "audit_comm.raw",
+                  "field": "audit_comm.keyword",
                   "id": "3",
                   "settings": {
                     "order": "asc",
@@ -278,7 +278,7 @@
               "bucketAggs": [
                 {
                   "fake": true,
-                  "field": "audit_se_suser.raw",
+                  "field": "audit_se_suser.keyword",
                   "id": "3",
                   "settings": {
                     "order": "asc",
@@ -463,7 +463,7 @@
             "selected": true
           }
         ],
-        "query": "{\"find\": \"terms\", \"field\": \"logsource.raw\"}",
+        "query": "{\"find\": \"terms\", \"field\": \"logsource.keyword\"}",
         "refresh": 1,
         "regex": "",
         "type": "query"

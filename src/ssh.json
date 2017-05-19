@@ -216,8 +216,8 @@
         {
           "columns": [
             {
-              "text": "user.raw",
-              "value": "user.raw"
+              "text": "user.keyword",
+              "value": "user.keyword"
             },
             {
               "text": "Count",
@@ -262,7 +262,7 @@
             {
               "bucketAggs": [
                 {
-                  "field": "user.raw",
+                  "field": "user.keyword",
                   "id": "2",
                   "settings": {
                     "order": "desc",
@@ -292,8 +292,8 @@
         {
           "columns": [
             {
-              "text": "user.raw",
-              "value": "user.raw"
+              "text": "user.keyword",
+              "value": "user.keyword"
             },
             {
               "text": "Count",
@@ -338,7 +338,7 @@
             {
               "bucketAggs": [
                 {
-                  "field": "user.raw",
+                  "field": "user.keyword",
                   "id": "2",
                   "settings": {
                     "order": "asc",
@@ -368,8 +368,8 @@
         {
           "columns": [
             {
-              "text": "user.raw",
-              "value": "user.raw"
+              "text": "user.keyword",
+              "value": "user.keyword"
             },
             {
               "text": "Count",
@@ -414,7 +414,7 @@
             {
               "bucketAggs": [
                 {
-                  "field": "user.raw",
+                  "field": "user.keyword",
                   "id": "2",
                   "settings": {
                     "order": "asc",
@@ -444,8 +444,8 @@
         {
           "columns": [
             {
-              "text": "src_ip.raw",
-              "value": "src_ip.raw"
+              "text": "src_ip.keyword",
+              "value": "src_ip.keyword"
             },
             {
               "text": "Count",
@@ -504,7 +504,7 @@
             {
               "bucketAggs": [
                 {
-                  "field": "src_ip.raw",
+                  "field": "src_ip.keyword",
                   "id": "2",
                   "settings": {
                     "order": "desc",
@@ -859,7 +859,7 @@
             "selected": true
           }
         ],
-        "query": "{\"find\": \"terms\", \"field\": \"logsource.raw\"}",
+        "query": "{\"find\": \"terms\", \"field\": \"logsource.keyword\"}",
         "refresh": 1,
         "type": "query"
       }

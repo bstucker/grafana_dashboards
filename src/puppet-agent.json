@@ -272,7 +272,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "logsource.raw",
+                  "field": "logsource.keyword",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -370,7 +370,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "puppet_killed_service.raw",
+                  "field": "puppet_killed_service.keyword",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -468,7 +468,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "puppet_killed_service.raw",
+                  "field": "puppet_killed_service.keyword",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -566,14 +566,14 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "logsource.raw",
+                  "field": "logsource.keyword",
                   "id": "1",
                   "meta": {},
                   "settings": {},
                   "type": "cardinality"
                 }
               ],
-              "query": "logsource:$host_var AND program:puppet-agent AND severity_label=error",
+              "query": "logsource:$host_var AND program:puppet-agent AND severity_label=Error",
               "refId": "A",
               "timeField": "@timestamp"
             }
@@ -664,7 +664,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "puppet_killed_service.raw",
+                  "field": "puppet_killed_service.keyword",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -762,7 +762,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "puppet_killed_service.raw",
+                  "field": "puppet_killed_service.keyword",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -911,7 +911,7 @@
               "bucketAggs": [
                 {
                   "fake": true,
-                  "field": "puppet_killed_service.raw",
+                  "field": "puppet_killed_service.keyword",
                   "id": "3",
                   "settings": {
                     "order": "asc",
@@ -1027,7 +1027,7 @@
               "bucketAggs": [
                 {
                   "fake": true,
-                  "field": "logsource.raw",
+                  "field": "logsource.keyword",
                   "id": "3",
                   "settings": {
                     "order": "asc",
@@ -1224,7 +1224,7 @@
             "selected": true
           }
         ],
-        "query": "{\"find\": \"terms\", \"field\": \"logsource.raw\"}",
+        "query": "{\"find\": \"terms\", \"field\": \"logsource.keyword\"}",
         "refresh": 1,
         "regex": "",
         "type": "query"

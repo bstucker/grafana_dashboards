@@ -67,7 +67,7 @@
               "bucketAggs": [
                 {
                   "fake": true,
-                  "field": "logsource.raw",
+                  "field": "logsource.keyword",
                   "id": "3",
                   "settings": {
                     "order": "asc",
@@ -213,7 +213,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "sudosh_session_id.raw",
+                  "field": "sudosh_session_id.keyword",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -311,7 +311,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "user.raw",
+                  "field": "user.keyword",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -550,7 +550,7 @@
             "selected": true
           }
         ],
-        "query": "{\"find\": \"terms\", \"field\": \"logsource.raw\"}",
+        "query": "{\"find\": \"terms\", \"field\": \"logsource.keyword\"}",
         "refresh": 1,
         "regex": "",
         "type": "query"
@@ -575,7 +575,7 @@
             "selected": true
           }
         ],
-        "query": "{\"find\": \"terms\", \"field\": \"sudosh_session_id.raw\"}",
+        "query": "{\"find\": \"terms\", \"field\": \"sudosh_session_id.keyword\"}",
         "refresh": 1,
         "regex": "",
         "type": "query"

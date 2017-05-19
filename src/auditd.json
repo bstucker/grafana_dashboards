@@ -59,7 +59,7 @@
               "bucketAggs": [
                 {
                   "fake": true,
-                  "field": "logsource.raw",
+                  "field": "logsource.keyword",
                   "id": "3",
                   "settings": {
                     "order": "asc",
@@ -166,7 +166,7 @@
               "bucketAggs": [
                 {
                   "fake": true,
-                  "field": "audit_type.raw",
+                  "field": "audit_type.keyword",
                   "id": "3",
                   "settings": {
                     "order": "asc",
@@ -273,7 +273,7 @@
               "bucketAggs": [
                 {
                   "fake": true,
-                  "field": "audit_syscall.raw",
+                  "field": "audit_syscall.keyword",
                   "id": "3",
                   "settings": {
                     "order": "asc",
@@ -542,7 +542,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "puppet_killed_service.raw",
+                  "field": "puppet_killed_service.keyword",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -640,7 +640,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "puppet_killed_service.raw",
+                  "field": "puppet_killed_service.keyword",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -738,7 +738,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "puppet_killed_service.raw",
+                  "field": "puppet_killed_service.keyword",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -836,7 +836,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "puppet_killed_service.raw",
+                  "field": "puppet_killed_service.keyword",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -934,7 +934,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "puppet_killed_service.raw",
+                  "field": "puppet_killed_service.keyword",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -1032,7 +1032,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "logsource.raw",
+                  "field": "logsource.keyword",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -1112,7 +1112,7 @@
               "bucketAggs": [
                 {
                   "fake": true,
-                  "field": "audit_exe.raw",
+                  "field": "audit_exe.keyword",
                   "id": "3",
                   "settings": {
                     "order": "asc",
@@ -1196,7 +1196,7 @@
               "bucketAggs": [
                 {
                   "fake": true,
-                  "field": "audit_auid.raw",
+                  "field": "audit_auid.keyword",
                   "id": "3",
                   "settings": {
                     "order": "asc",
@@ -1275,7 +1275,7 @@
               "bucketAggs": [
                 {
                   "fake": true,
-                  "field": "audit_auid.raw",
+                  "field": "audit_auid.keyword",
                   "id": "3",
                   "settings": {
                     "order": "asc",
@@ -1385,7 +1385,7 @@
               "dsType": "elasticsearch",
               "metrics": [
                 {
-                  "field": "audit_uid.raw",
+                  "field": "audit_uid.keyword",
                   "id": "1",
                   "meta": {},
                   "settings": {},
@@ -1542,7 +1542,7 @@
             "selected": true
           }
         ],
-        "query": "{\"find\": \"terms\", \"field\": \"logsource.raw\"}",
+        "query": "{\"find\": \"terms\", \"field\": \"logsource.keyword\"}",
         "refresh": 1,
         "regex": "",
         "type": "query"
@@ -1662,7 +1662,7 @@
             "selected": false
           }
         ],
-        "query": "{\"find\": \"terms\", \"field\": \"audit_type.raw\"}",
+        "query": "{\"find\": \"terms\", \"field\": \"audit_type.keyword\"}",
         "refresh": 1,
         "regex": "",
         "type": "query"
@@ -1827,7 +1827,7 @@
             "selected": false
           }
         ],
-        "query": "{\"find\": \"terms\", \"field\": \"audit_syscall.raw\"}",
+        "query": "{\"find\": \"terms\", \"field\": \"audit_syscall.keyword\"}",
         "refresh": 1,
         "regex": "",
         "type": "query"

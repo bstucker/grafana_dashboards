@@ -1,6 +1,6 @@
 Summary: Grafana dashboards developed for SIMP
 Name: simp-grafana-dashboards
-Version: 1.0.0
+Version: 2.0.0
 Release: 0
 License: Apache-2.0
 Group: Applications/System
@@ -11,11 +11,11 @@ Buildarch: noarch
 Prefix: %{_var}/lib/grafana/dashboards
 
 Requires: grafana >= 3.0.0 
-Requires: grafana < 4.0.0 
+Requires: grafana < 5.0.0 
 
 %description
 Dashboards developed with SIMP in mind, but may be useful for other grafana
-users.
+users. Suitable for Logstash/Elasticsearch 5.X.
 
 %prep
 %setup -q
@@ -41,6 +41,10 @@ install -p -m 640 -D src/*.json %{buildroot}%{prefix}
 # Post uninstall stuff
 
 %changelog
+* Mon May 15 2017 Liz Nemsick<lnemsick.simp@gmail.com> - 2.0.0-0
+  - Update templates for Logstash 5.x
+  - Update requires for newer grafana
+
 * Wed Nov 15 2016 Ralph Wright <ralph.wright@onyxpoint.com> - 1.0.0-0
   - Updated existing dashboards
   - Added auditd, yum, and selinux dashboards
